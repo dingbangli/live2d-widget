@@ -33,7 +33,7 @@ function loadWidget(config) {
     })();
 
     function welcomeMessage(time) {
-        if (location.pathname === "/") { // 如果是主页
+        if (location.pathname === "/") { // 如果是主頁
             for (let { hour, text } of time) {
                 const now = new Date(),
                     after = hour.split("-")[0],
@@ -43,27 +43,27 @@ function loadWidget(config) {
                 }
             }
         }
-        const text = `欢迎阅读<span>「${document.title.split(" - ")[0]}」</span>`;
+        const text = `歡迎閱讀<span>「${document.title.split(" - ")[0]}」</span>`;
         let from;
         if (document.referrer !== "") {
             const referrer = new URL(document.referrer),
                 domain = referrer.hostname.split(".")[1];
             const domains = {
                 "baidu": "百度",
-                "so": "360搜索",
+                "yahoo": "雅虎",
                 "google": "谷歌搜索"
             };
             if (location.hostname === referrer.hostname) return text;
 
             if (domain in domains) from = domains[domain];
             else from = referrer.hostname;
-            return `Hello！来自 <span>${from}</span> 的朋友<br>${text}`;
+            return `Hello！來自 <span>${from}</span> 的朋友<br>${text}`;
         }
         return text;
     }
 
     function registerEventListener(result) {
-        // 检测用户活动状态，并在空闲时显示消息
+        // 檢測用戶活動狀態，並在空閒時顯示消息
         let userAction = false,
             userActionTimer,
             messageArray = result.message.default;
@@ -127,9 +127,9 @@ function loadWidget(config) {
         let modelId = localStorage.getItem("modelId"),
             modelTexturesId = localStorage.getItem("modelTexturesId");
         if (modelId === null) {
-            // 首次访问加载 指定模型 的 指定材质
+            // 首次訪問加載 指定模型 的 指定材質
             modelId = 1; // 模型 ID
-            modelTexturesId = 53; // 材质 ID
+            modelTexturesId = 53; // 材質 ID
         }
         model.loadModel(modelId, modelTexturesId);
         fetch(config.waifuPath)
