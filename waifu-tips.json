@@ -131,7 +131,7 @@
 	}],
 	"click": [{
 		"selector": "#live2d",
-		"text": ["是…是不小心碰到了吧…………………         我要跟 Laurance 說", "Laurance 你看到我的衣服了嗎？ ", "再摸的話我要跟 Laurance 說了！          	   ⌇●﹏●⌇", "Laurance 嗎，這裡有個變態一直在摸我(ó﹏ò｡)", "Laurance 不要再摸我了！ ", "我永遠愛你 Laurance"]
+		"text": ["是…是不小心碰到了吧…………………         我要跟 Laurance 說", "Laurance 你看到我的衣服了嗎？ ", "再摸的話我要跟 Laurance 說了！ ", "Laurance 嗎，這裡有個變態一直在摸我(ó﹏ò｡)", "Laurance 不要再摸我了！ ", "我永遠愛你 Laurance"]
 	}, {
 		"selector": ".veditor",
 		"text": ["要吐槽些什麼呢？ ", "一定要認真填寫喵～", "有什麼想說的嗎？"]
